@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Search from "./components/Search/Search";
+import WeatherColombo from "./components/WeatherColombo/WeatherColombo";
+import "./App.css";
+import { Card, Col, Row } from "antd";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Row style={{ padding: "5%" }}>
+        <Col span={12}>
+          <Card
+            title={"Weather in Colombo"}
+            bordered={false}
+            style={{
+              width: 400,
+            }}
+          >
+            <WeatherColombo />
+          </Card>
+        </Col>
+        <Col span={12}>
+          <Search />
+        </Col>
+      </Row>
+    </>
   );
 }
 

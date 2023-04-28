@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Lobster&family=Playfair+Display&family=Rubik:wght@300&family=Shadows+Into+Light&display=swap");
+.description {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  color: blue;
+}
+img {
+  border: 1px solid #a60606;
+  border-radius: 15px;
+  padding: 0px;
+  -webkit-box-shadow: 0px 8px 20px 0px rgb(252, 96, 96);
+  -moz-box-shadow: 0px 8px 20px 0px rgb(252, 96, 96);
+  box-shadow: 0px 8px 20px 0px rgb(252, 96, 96);
+}
